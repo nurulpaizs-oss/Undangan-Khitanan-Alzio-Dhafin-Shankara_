@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Digital - Alzio Dhafin Shankara</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f7f1e9;
+        color: #5c5c5c;
+        margin: 0;
+      }
+      .font-serif-elegant {
+        font-family: "Playfair Display", serif;
+      }
+
+      @keyframes spin-slow {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .animate-spin-slow {
+        animation: spin-slow 10s linear infinite;
+      }
+
+      section {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 40px 0;
+      }
+
+      .nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        transition: all 0.3s;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+      }
+      .nav-btn:hover {
+        background: white;
+        color: #57534e;
+      }
+      .nav-btn-dark {
+        background: #57534e;
+        color: white;
+        border: none;
+      }
+      .nav-btn-dark:hover {
+        background: #292524;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="slide1" class="!p-0">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/images/foto-anak.jpg"
+          alt="Foto Alzio"
+          class="w-full h-full object-cover brightness-[0.6]"
+        />
+      </div>
+      <div
+        class="absolute inset-0 z-10 bg-gradient-to-b from-stone-900/40 via-transparent to-[#f7f1e9]/90"
+      ></div>
+      <div class="relative z-20 text-center px-6">
+        <p
+          class="uppercase tracking-[0.4em] text-[10px] font-medium text-white mb-4 drop-shadow-md"
+        >
+          Undangan Walimatul Khitan
+        </p>
+        <h1
+          class="font-serif-elegant text-4xl md:text-6xl text-white mb-8 drop-shadow-lg leading-tight px-4"
+        >
+          Alzio Dhafin<br />Shankara
+        </h1>
+        <div class="h-[1px] w-12 bg-white/60 mx-auto mb-10"></div>
+        <a href="#slide2" onclick="toggleMusic()" class="nav-btn"
+          >Buka Undangan</a
+        >
+      </div>
+    </section>
+
+    <section id="slide2">
+      <div class="max-w-xl w-full text-center px-6">
+        <p
+          class="text-[10px] uppercase tracking-[0.3em] text-stone-400 mb-6 font-semibold"
+        >
+          Assalamu'alaikum Wr. Wb.
+        </p>
+
+        <div class="mb-10 px-6">
+          <p
+            class="text-stone-500 text-[13px] italic leading-relaxed font-light"
+          >
+            "Semoga Allah memuliakan masa depannya, meluaskan rezekinya,
+            menjadikannya anak yang sholeh, berbakti kepada orang tua, berguna
+            bagi nusa, bangsa, serta agamanya."
+          </p>
+          <div class="h-[1px] w-8 bg-stone-200 mx-auto mt-4"></div>
+        </div>
+
+        <div class="mb-8">
+          <div
+            class="w-48 h-64 mx-auto rounded-t-full rounded-b-2xl overflow-hidden border-[12px] border-white shadow-xl"
+          >
+            <img
+              src="assets/images/foto-anak.jpg"
+              alt="Foto Alzio"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <h2 class="font-serif-elegant text-3xl text-stone-900 mb-4">
+          Alzio Dhafin Shankara
+        </h2>
+        <p class="text-stone-500 text-xs italic mb-6 leading-relaxed px-4">
+          "Putra tercinta dari Bapak Acep & Ibu Dina"
+        </p>
+        <div class="h-[1px] w-12 bg-stone-200 mx-auto mb-8"></div>
+        <a href="#slide3" class="nav-btn nav-btn-dark">Lihat Detail Acara</a>
+      </div>
+    </section>
+
+    <section id="slide3" class="bg-[#e7ebee]">
+      <div class="max-w-xl w-full text-center px-6">
+        <h2 class="font-serif-elegant text-4xl text-stone-800 mb-8 italic">
+          Waktu & Lokasi
+        </h2>
+        <div
+          class="bg-white p-10 rounded-[2.5rem] shadow-xl border border-stone-100 space-y-8 mb-8 text-center"
+        >
+          <div class="border-b border-stone-100 pb-6">
+            <p
+              class="text-stone-400 text-[9px] uppercase tracking-widest font-bold mb-1"
+            >
+              Hari & Tanggal
+            </p>
+            <p class="font-serif-elegant text-2xl text-stone-800">
+              Kamis, 26 Maret 2026
+            </p>
+          </div>
+
+          <div class="border-b border-stone-100 pb-6">
+            <p
+              class="text-stone-400 text-[9px] uppercase tracking-widest font-bold mb-1"
+            >
+              Waktu Pelaksanaan
+            </p>
+            <p class="text-xl text-stone-700 font-medium">
+              08.00 WIB - Selesai
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-stone-400 text-[9px] uppercase tracking-widest font-bold mb-1"
+            >
+              Lokasi
+            </p>
+            <p class="text-sm text-stone-700 leading-relaxed font-medium">
+              Kediaman kakek Abah Rohimin<br />kp.cipangasih RT/RW 01/01 blok
+              pasar desa kalapa genep kec cikalong
+            </p>
+          </div>
+
+          <a
+            href="https://maps.apple/p/W5fRvWWVt8Qsko"
+            target="_blank"
+            class="inline-flex items-center gap-2 text-[10px] text-stone-500 hover:text-stone-800 font-bold tracking-widest uppercase mt-4"
+          >
+            📍 Buka Google Maps
+          </a>
+        </div>
+        <a href="#slide4" class="nav-btn nav-btn-dark">Kirim Doa & Kado</a>
+      </div>
+    </section>
+
+    <section id="slide4">
+      <div class="max-w-xl w-full px-6 flex flex-col justify-center">
+        <div
+          class="bg-white rounded-[2.5rem] shadow-xl border border-stone-100 overflow-hidden flex flex-col mb-10"
+        >
+          <div class="p-8 text-center border-b border-stone-50 bg-stone-50/30">
+            <p
+              class="text-[9px] uppercase tracking-widest text-stone-400 mb-4 font-bold italic"
+            >
+              Dana a.n Dina Lestari
+            </p>
+            <p
+              class="text-2xl font-semibold text-stone-700 tracking-widest mb-4"
+            >
+              082323535930
+            </p>
+            <button
+              onclick="copyToClipboard('082323535930')"
+              class="text-[9px] border border-stone-300 px-6 py-2 rounded-full hover:bg-stone-800 hover:text-white transition uppercase"
+            >
+              Salin Nomor
+            </button>
+          </div>
+          <div class="p-8">
+            <h3
+              class="font-serif-elegant text-xl text-stone-800 mb-6 text-center italic"
+            >
+              Ucapan Selamat
+            </h3>
+            <div class="space-y-3">
+              <input
+                type="text"
+                id="nama-tamu"
+                placeholder="Nama"
+                class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs bg-stone-50 focus:outline-none focus:ring-1 focus:ring-stone-400"
+              />
+              <textarea
+                id="pesan-tamu"
+                placeholder="Pesan..."
+                class="w-full px-4 py-3 rounded-xl border border-stone-200 text-xs h-24 bg-stone-50 focus:outline-none focus:ring-1 focus:ring-stone-400"
+              ></textarea>
+              <button
+                onclick="kirimWA()"
+                class="w-full bg-stone-800 text-white py-3 rounded-xl text-[10px] uppercase font-bold tracking-widest hover:bg-black transition"
+              >
+                Kirim via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="text-[9px] uppercase tracking-[0.4em] text-stone-400 mb-2">
+            Terima Kasih
+          </p>
+          <h2 class="font-serif-elegant text-2xl text-stone-500 italic">
+            Acep & Dina
+          </h2>
+          <a
+            href="#slide1"
+            class="inline-block mt-6 text-[9px] uppercase tracking-widest text-stone-300 hover:text-stone-500 transition"
+            >↑ Kembali ke Atas</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="music-container" class="fixed bottom-6 right-6 z-50">
+      <button
+        onclick="toggleMusic()"
+        id="music-btn"
+        class="bg-white/80 backdrop-blur-md p-3 rounded-full shadow-lg border border-stone-100 text-stone-400"
+      >
+        <svg
+          id="icon-play"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+          />
+        </svg>
+      </button>
+      <audio id="backsound" loop>
+        <source src="assets/music/backsound.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text);
+        alert("Nomor rekening berhasil disalin!");
+      }
+
+      const music = document.getElementById("backsound");
+      const musicBtn = document.getElementById("music-btn");
+      let isPlaying = false;
+
+      function toggleMusic() {
+        if (isPlaying) {
+          music.pause();
+          musicBtn.classList.remove("animate-spin-slow");
+        } else {
+          music.play();
+          musicBtn.classList.add("animate-spin-slow");
+        }
+        isPlaying = !isPlaying;
+      }
+
+      function kirimWA() {
+        const nama = document.getElementById("nama-tamu").value;
+        const pesan = document.getElementById("pesan-tamu").value;
+        const nomorWA = "6282323535930";
+
+        if (nama.trim() === "" || pesan.trim() === "") {
+          alert("Mohon isi nama dan ucapan terlebih dahulu.");
+          return;
+        }
+
+        const templateAwal = `Assalamu'alaikum Bapak Acep dan Ibu Dina.`;
+        const isiPesan = `Perkenalkan saya *${nama.trim()}*, ingin menyampaikan ucapan:%0A%0A"${pesan.trim()}"`;
+        const totalPesan = `${templateAwal}%0A%0A${isiPesan}`;
+        const url = `https://api.whatsapp.com/send?phone=${nomorWA}&text=${totalPesan}`;
+
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
